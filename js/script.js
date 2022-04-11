@@ -1,9 +1,18 @@
   // ограничитель текста в блоке (НАЧАЛО)
-var quan = 150,
+var $width = $(window).width();
+var quan = 150;
+var quan2 = 50,
 textBlock = $('.textblock'),
 textContent = textBlock.text();
-if (textContent.length > quan) {
-textBlock.text(textContent.slice(0, quan) +'...');
+if ($width >= 468) {
+  if (textContent.length > quan) {
+  textBlock.text(textContent.slice(0, quan) +'...');
+  }
+}
+if ($width <= 468) {
+  if (textContent.length > quan2) {
+    textBlock.text(textContent.slice(0, quan2) +'...');
+    }
 }
 
 // ограничитель текста в блоке (КОНЕЦ)
@@ -88,4 +97,10 @@ $(".button-calendar2").click(function(){
     $(".animals").hide();
     $(".zoo").hide();
     $(".news").show();
+  });
+
+
+  $('.button').click(function() {
+    $('.button').removeClass('active');
+    $(this).addClass('active')
   });
