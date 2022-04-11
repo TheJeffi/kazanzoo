@@ -13,7 +13,7 @@
       flex-direction: column;
       justify-content: space-between;
    }
-   &__text {
+   &__text{
       font-style: 14px;
       letter-spacing: 15px;
       text-transform: uppercase;
@@ -69,11 +69,8 @@
       margin: 0 3px 0 3px;
    }
 
-   &__event-list li{
+   &__event-list li:not(:first-child){
       padding: 5px 0 0 0;
-   }
-   &__event-list li:first-child{
-      padding: 0 0 0 0;
    }
 
 
@@ -271,10 +268,13 @@ h1{
 
    &__block-element {
       min-width: 200px;
+      border-radius: 10px;
       border: 1px solid #000;
       margin: 5px;
    }
-
+   &__block-element:hover {
+      background-color:burlywood;
+   }
    &__block-content {
       font-size: 15px;
       padding: 10px;
@@ -286,10 +286,6 @@ h1{
    }
    &__block-content p {
       padding: 5px;
-   }
-   &__block-content input {
-      padding: 2px;
-      text-transform: lowercase;
    }
 
 

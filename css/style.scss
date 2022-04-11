@@ -44,7 +44,8 @@
 }
 
 .button{
-	border-radius: 5%;
+	margin: 5px;
+	border-radius: 10px;
 	font-size: 20px;
 	padding: 5px 15px;
 	background-color: #EEE8AA;
@@ -54,6 +55,9 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+.active {
+	background-color: #f9dd94;
+}
 .button:hover {
 	background-color: #f9dd94;
 	cursor: pointer;
