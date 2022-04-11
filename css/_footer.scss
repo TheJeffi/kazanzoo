@@ -1,0 +1,66 @@
+.footer {
+   padding: 15px 0;
+   background-color: gray;
+   &__links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+
+   }
+   &__links h2{
+      display: flex;
+      text-transform: uppercase;
+      font-size: 25px;
+      color: rgba(0, 0, 0, 0.5);
+      
+   }
+   &__links li{
+     padding-top: 5px;
+     font-size: 20px;
+      
+   }
+
+   &__links li:hover{
+         display: inline-block;
+         color: #f9dd94;
+         background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+         background-position: 0 100%;
+         background-size: 100% 1px;
+         background-repeat: repeat-x;
+
+   }
+
+   &__contacts {
+
+   }
+   &__contacts h2{
+      padding-bottom: 5px;
+   }
+   &__contacts h2:hover{
+      color:bisque;
+      cursor: pointer;
+   }
+
+   &__links-parthers {
+   }
+
+   &__links-about {
+   }
+
+   &__links-other {
+   }
+
+   &__social {
+      display: flex;
+      flex-direction: column;
+   }
+   &__social a{
+      padding-top: 2.5px;
+      padding-bottom: 2.5px;
+   }
+   &__social img{
+      width: 35px;
+      height: auto;
+   }
+}

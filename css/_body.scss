@@ -1,0 +1,352 @@
+.body {
+   margin:  25px 0;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+   
+   &__content {
+      color: #000;
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   &__text {
+      font-style: 14px;
+      letter-spacing: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 40px;
+   }
+   &__text:last-child{
+      margin-bottom: 0px;
+   }
+   &__title {
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 15px;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+   }
+
+   &__title-nav {
+      text-align: center;
+      margin-bottom: 20px;
+   }
+
+	&__event {
+      width: 100%;
+      padding: 40px;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+   	}
+
+   &__event-nav {
+      justify-content: center;
+      display: flex;
+      padding: 0 0 30px 0;
+      justify-content: space-between;
+      flex: 1 1 auto;
+   }
+   &__event-list {
+   }
+   &__event-list span{
+      font-size: 20px;
+      font-weight: 600;
+   }
+
+   &__event-list span:after{
+      content: "—";
+      font-weight: 300;
+      display: inline-block;
+      margin: 0 3px 0 3px;
+   }
+
+   &__event-list li{
+      padding: 5px 0 0 0;
+   }
+   &__event-list li:first-child{
+      padding: 0 0 0 0;
+   }
+
+
+   &__news {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #000;
+      padding: 20px 0;
+      border-bottom: 1px solid #000;
+      &-mini {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+
+
+	&__block {
+      border-radius: 1%;
+      border: 1px solid grey;
+      overflow: hidden;
+      position: relative;
+      background-color: #fff;
+      color: rgba(0,0, 0, 0.9);
+      flex: 0 1 33%;
+      margin-bottom: 20px;
+      margin: 5px;
+	}
+
+   &__block:hover{
+      border: 1px solid black;
+   }
+
+   &__block  a{
+      color: #000;
+   }
+
+   &__block-post{
+      border: 1px solid #000;
+   }
+   &__block-post img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+
+   &__block-info {
+      padding: 15px 15px;
+   }
+	&__block-date {
+      padding: 5px 0 5px 0;
+	}
+
+   .datetime {
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      color: #808080;
+   }
+
+	&__block-title {
+      display:block;
+	}
+
+   &__block-title:hover{
+      color: #808000;
+   }
+
+   .title {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+   }
+
+   &__block-text {
+      display:block
+	}
+
+	&__block-nav {
+      display: flex;
+      padding: 15px 15px;
+      justify-content: space-between;
+	}
+
+	&__block-bacon {   
+	}
+
+   .hashtag {
+      font-size: 20px;
+   }
+
+   #zoo {
+      color:coral;
+   }
+
+   #animals {
+      color: chartreuse;
+   }
+
+   #news {
+      color: crimson;
+   }
+
+	&__block-link {
+	}
+
+   .link a:hover{
+         color: #f9dd94;
+         background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+         background-position: 100% 100%;
+         background-size: 100% 1px;
+         background-repeat: repeat-x;
+   }
+
+
+//history
+
+h1{
+   font-size: 40px;
+   padding-bottom: 20px;
+}
+&__history {
+   text-indent: 25px;
+   font-size: 20px;
+   margin-bottom: 20px;
+   &-image {
+      display: flex;
+      justify-content: space-between;
+      
+   }
+   &-image img {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+
+//animals
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   &__element {
+      padding: 5px;
+      position: relative;
+   }
+   &__element:hover p{
+      display: inline-block;
+   }
+   &__content img{
+      display: inline-block;
+      width: auto;
+      height: 400px;
+   }
+   &__content p {
+      background: rgba(0,0,0, 0.3);
+      color: rgba(255,255,255,0.9);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 50px;
+      font-size: 18px;
+      padding: 3px 5px;
+      display: none;
+   }
+
+//excursions
+
+   &__excursion, &__price{
+      text-align: center;
+      font-size: 30px;
+      padding: 50px;
+      border-top: 1px solid #000;
+   }
+   &__price{
+      border-bottom: 1px solid #000;
+   }
+   &__price-info{
+      margin-top: 10px;
+      font-size: 15px;
+      color: gray;
+   }
+   &__price-info p{
+      padding: 5px;
+   }
+   &__block-row {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+   }
+
+   &__block-element {
+      min-width: 200px;
+      border: 1px solid #000;
+      margin: 5px;
+   }
+
+   &__block-content {
+      font-size: 15px;
+      padding: 10px;
+
+   }
+   &__block-content h3 {
+      border-bottom: 1px solid #000;
+      padding: 5px;
+   }
+   &__block-content p {
+      padding: 5px;
+   }
+   &__block-content input {
+      padding: 2px;
+      text-transform: lowercase;
+   }
+
+
+
+//register
+
+   &__block-row-register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 20px 0;
+   }
+
+   &__block-row-register h2{
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+
+   &__block-element-register {
+      margin: 5px;
+   }
+
+   &__block-content-register {
+      font-size: 15px;
+      padding: 10px;
+   }
+
+   &__block-content-register p {
+      margin-bottom: 5px;
+   }
+   &__block-content-register input {
+      padding: 5px;
+   }
+   &__block-content-register select {
+      padding: 5px;
+   }
+
+//contacts
+&__contact {
+   text-align: center;
+}
+&__contact address{
+   margin-bottom: 10px;
+}
+&__contact a{
+   margin-bottom: 10px;
+   display: block;
+}
+
+&__new {
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+   padding: 20px 0 29px 0;
+   text-indent: 15px;
+}
+&__new p {
+   padding: 10px 0 10px 0;
+}
+}

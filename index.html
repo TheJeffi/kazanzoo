@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="icon" href="/img/Logo.svg">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+   <title>Казанский Зоопарк</title>
+  </head>
+  <body>
+
+
+      <header data-include="header-video"></header>
+
+      <div class="wrapper">
+        <main class="body">
+          <div class="body__content">
+            <div class="body__title">Новости и мероприятия</div>
+            <div class="body__text">не пропустите!</div>
+        
+            <!-- КАЛЕНДАРЬ -->
+            <section class="body__event">
+            <div class="body__event-nav">
+              <input type="button" class="button-calendar1 button" value="Сегодня">
+              <input type="button" class="button-calendar2 button" value="Завтра">
+              <input class="button-calendar3 button" id="calendar" type="date" value="2022-04-01" step="1">
+            </div>
+            <div id="calendar1" class="body__event-list">
+              <ul>
+                <li><span>11:30</span> Экскурсия по миру насекомых</li>
+                <li><span>12:00</span> Кормление индийского дикобраза</li>
+                <li><span>13:00</span> История обыкновенного бобра</li>
+                <li><span>14:30</span> Кормление росомахи</li>
+                <li><span>17:00</span> Экскурсия по миру пресноводных</li>
+                <li><span>18:00</span> Представление на сцене</li>
+              </ul>
+            </div>
+
+            <div id="calendar2" class="body__event-list" style="display:none">
+              <ul>
+                <li><span>11:30</span> Экскурсия по миру хищников</li>
+                <li><span>12:00</span> Кормление индийского слона</li>
+                <li><span>13:00</span> Выступление на сцене</li>
+                <li><span>14:30</span> Кормление обезьян</li>
+                <li><span>18:00</span> Экскурсия по миру пресноводных</li>
+                <li><span>18:30</span> Фотосессия с фламинго</li>
+              </ul>
+            </div>
+
+            <div id="calendar3" class="body__event-list" style="display:none">
+              <h2> на эту дату еще нет расписания</h2>
+            </div>
+            <div id="calendar4" class="body__event-list" style="display:none">
+              <h2> События этого дня уже прошли.</h2>
+            </div>
+            </section>
+            <!-- /КАЛЕНДАРЬ -->
+            <!-- НОВОСТНОЙ БЛОК -->
+            <section class="body__news-mini">     
+                <div class="body__block">
+                  <div class="body__block-post">
+                    <img class="body__block-img" src="/img/block/flamingo.jpg" alt="розовый фламинго">
+                  </div>
+                  <div class="body__block-info">
+                    <a href="new_page.html" class="body__block-link">
+                      <div class="body__block-title">
+                        <h2 class="title">в зоопарке появился на свет розовый пеликан</h2>
+                      </div>
+                      <div class="body__block-text">
+                        <h2 class="textblock">Птенец вылупился 10 марта. Его родители – уже очень опытная пара, у них регулярно появляется потомство, которое они успешно выращивают. Поэтому мы не стали помещать яйцо в инкубатор.</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="body__block-nav">
+                    <div class="body__block-bacon">
+                      <a href="news.html" class="hashtag" id="animals">#Животные</a>
+                    </div>
+                    <div class="body__block-date">
+                      <p class="datetime">24.03.2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="body__block">
+                  <div class="body__block-post">
+                    <img src="/img/block/flamingo.jpg" alt="розовый фламинго">
+                  </div>
+                  <div class="body__block-info">
+                    <a href="new_page.html" class="body__block-link">
+                      <div class="body__block-title">
+                        <h2 class="title">в зоопарке появился на свет розовый пеликан</h2>
+                      </div>
+                      <div class="body__block-text">
+                        <h2 class="textblock">Птенец вылупился 10 марта. Его родители – уже очень опытная пара, у них регулярно появляется потомство, которое они успешно выращивают. Поэтому мы не стали помещать яйцо в инкубатор.</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="body__block-nav">
+                    <div class="body__block-bacon">
+                      <a href="news.html" class="hashtag" id="news">#Новости</a>
+                    </div>
+                      <div class="body__block-date">
+                        <p class="datetime">24.03.2022</p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /НОВОСТНОЙ БЛОК -->
+            <div class="body__text dark link">
+            <a href="news.html">больше новостей</a>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer data-include="footer"></footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

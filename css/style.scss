@@ -1,0 +1,60 @@
+@import "_base-style";
+@import "_header";
+@import "_body";
+@import "_footer";
+@import "_header-video";
+@import "_media";
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.wrapper-full {
+	height: auto;
+	margin: 0 auto;
+}
+
+.dark {
+	color: #000;
+}
+
+.light {
+	color: #fff;
+}
+
+.link {
+	letter-spacing: 1px;
+	color: #000;
+	font-size: 20px;
+	text-transform:lowercase;
+}
+
+.link:hover {
+	color: cadetblue;
+}
+
+.hidden {
+	display: none;
+}
+
+.open {
+	display: block;
+}
+
+.button{
+	border-radius: 5%;
+	font-size: 20px;
+	padding: 5px 15px;
+	background-color: #EEE8AA;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button:hover {
+	background-color: #f9dd94;
+	cursor: pointer;
+}

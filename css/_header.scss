@@ -1,0 +1,43 @@
+.header {
+   background-color: gray;
+   width: 100%;
+
+   &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+   }
+
+   &__logo {
+      width: 80px;
+      height: auto;
+      align-items: center;
+
+      &-img{
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   &__menu {
+      padding: 20px 0;
+      &-main {
+         display: flex;
+         margin: 0px -5px;
+         align-items: center;
+      }
+      &-second {
+         margin: 10px 20px;
+         padding: 5px 5px;
+      }
+
+      &-second:hover{
+         color: #f9dd94;
+         background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+         background-position: 100% 100%;
+         background-size: 100% 1px;
+         background-repeat: repeat-x;
+   }
+}
+}
