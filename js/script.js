@@ -4,12 +4,12 @@ var quan = 150;
 var quan2 = 50,
 textBlock = $('.textblock'),
 textContent = textBlock.text();
-if ($width >= 468) {
+if ($width >= 768) {
   if (textContent.length > quan) {
   textBlock.text(textContent.slice(0, quan) +'...');
   }
 }
-if ($width <= 468) {
+if ($width <= 768) {
   if (textContent.length > quan2) {
     textBlock.text(textContent.slice(0, quan2) +'...');
     }
