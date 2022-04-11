@@ -222,9 +222,6 @@ h1{
       padding: 5px;
       position: relative;
    }
-   &__element:hover p{
-      display: inline-block;
-   }
    &__content img{
       display: inline-block;
       width: auto;
@@ -238,7 +235,6 @@ h1{
       bottom: 50px;
       font-size: 18px;
       padding: 3px 5px;
-      display: none;
    }
 
 //excursions

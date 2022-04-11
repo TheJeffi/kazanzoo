@@ -1,6 +1,30 @@
 .footer {
    padding: 15px 0;
-   background-color: gray;
+   background-color: rgba(0, 0, 0, 0.8);
+	&__link-row {
+      display: flex;
+      margin: 0px -5px;
+	}
+
+	&__link-element {
+      padding: 0px 15px;
+      flex: 0 1 25%;
+      border-left: 1px solid #f9dd94;
+	}
+   &__link-element:last-child {
+      border-right: 1px solid #f9dd94;
+   }
+
+	&__link-content {
+	}
+
+   &__link-content-title {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #f9dd94;
+   }
+
+
    &__links {
       width: 100%;
       display: flex;
@@ -15,13 +39,13 @@
       color: rgba(0, 0, 0, 0.5);
       
    }
-   &__links li{
+   &__link-content li{
      padding-top: 5px;
      font-size: 20px;
       
    }
 
-   &__links a:hover{
+   &__link-content a:hover{
          display: inline-block;
          color: #f9dd94;
          background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
@@ -30,7 +54,6 @@
          background-repeat: repeat-x;
 
    }
-
    &__contacts {
 
    }
@@ -42,25 +65,21 @@
       cursor: pointer;
    }
 
-   &__links-parthers {
-   }
-
-   &__links-about {
-   }
-
-   &__links-other {
-   }
-
-   &__social {
+   &__social-row {
       display: flex;
       flex-direction: column;
    }
-   &__social a{
-      padding-top: 2.5px;
+   &__social-element{
+      text-align: center;
+      padding-top: 15px;
       padding-bottom: 2.5px;
    }
-   &__social img{
+   &__social-content img{
       width: 35px;
       height: auto;
+   }
+
+   .bottom {
+      margin-bottom: 10px;
    }
 }
