@@ -30,7 +30,7 @@ $(".button-calendar2").click(function(){
   });
 });
 
-  $(".button-calendar3").focus(function(){
+  $(".button-calendar3").change(function(){
     var date = $('#calendar').val();
     console.log(date);
   if (date == "2022-04-01"){
